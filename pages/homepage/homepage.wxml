@@ -12,14 +12,10 @@
       </swiper>
     </view>
 
+    <import src="../template/hpeletemp.wxml"/>
     <view class="element-container" wx:for="{{itemlist}}" wx:key="*this">
       <block wx:for="{{item}}" wx:key="*this">
-        <view class="element-container-item" bindtap="checkDetail" data-item="{{item}}">
-          <image class="element-container-item-img" src="{{item.img}}"></image>
-          <label class="element-container-item-titlab">{{item.tit}}</label>
-          <label class="element-container-item-pricelab">{{item.pri}}</label>
-          <label class="element-container-item-saleslab">{{item.sal}}</label>
-        </view>
+        <template is="homepageitem" data="{{item}}"/>
       </block>
     </view>
   </view>
