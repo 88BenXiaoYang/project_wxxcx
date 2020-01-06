@@ -1,0 +1,5 @@
+<view class="container">
+  <button style="color: red" bindtap="goPageA">GoPageAHHHH</button>
+  <button style="color: orange" bindtap="goPageB">GoPageB</button>
+  <button style="color: purple" bindtap="goPageC">GoPageCHHHHHH</button>
+</view>

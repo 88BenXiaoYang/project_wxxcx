@@ -1,0 +1,6 @@
+<view class="container">
+ <view>{{text}}</view>
+ <button hover-class="hover">点击btn</button>
+ <view hover-class="hover">点击v</view>
+ <button loading="{{loading}}" bindtap="tap">操作</button>
+</view>

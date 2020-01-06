@@ -1,0 +1,3 @@
+<scroll-view class="swiperHeight">
+  <view>Test</view>
+</scroll-view>

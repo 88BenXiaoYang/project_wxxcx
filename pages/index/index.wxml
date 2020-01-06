@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<import src="templates.wxml"/>
+
+<view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <!-- <view wx:if="{{conditionTest}}">{{conditionTestContent}}</view> -->
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+    <text>\n当前时间：{{time}}</text>
+  </view> -->
+  <!-- <view wx:for="{{strList}}" wx:key="*this">
+    {{item}}
+  </view> -->
+  <!-- <view wx:for="{{list}}" wx:key="msg">
+    {{item.msg}}
+  </view> -->
+  <!-- <block wx:for="{{[1,2,3]}}" wx:key="*this">
+    <view>{{index}}:</view>
+    <view>{{item}}</view>
+  </block> -->
+  <!-- <switch wx:for="{{objArry}}" wx:key="unique">{{item.id}}</switch>
+  <button bindtap="switch">Switch</button>
+  <button bindtap="addToFront">Add to the front</button>
+  <switch wx:for="{{numArray}}" wx:key="*this">{{item}}</switch>
+  <button bindtap="addNumberToFront">Add Number to the front</button> -->
+  <!-- <template is="msgItem" data="{{...item}}"/> -->
+  <!-- <block wx:for="{{[1,2,3,4,5]}}" wx:key="*this">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
+  </block> -->
+  <!-- <template is="item" data="{{text: 'forbar'}}"/> -->
+  <!-- <view style="color: {{eleColor}}; font-size: {{eleFontSize}}">
+    <text>{{conditionTestContent}}</text>
+  </view> -->
+  <button style="color: red" bindtap="goPageA">GoPageA</button>
+  <button style="color: orange" bindtap="goPageB">GoPageB</button>
+  <button style="color: purple" bindtap="goPageC">GoPageC</button>
+</view>

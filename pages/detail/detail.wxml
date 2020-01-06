@@ -1,0 +1,18 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <image class="detail-img" src="{{itm.img}}"></image>
+  <view class="detail-tit-view">
+    <label class="detail-tit-view-tit-lab">{{itm.tit}}</label>
+    <label class="detail-tit-view-subtit-lab">{{itm.subtit}}</label>
+  </view>
+  <view class="detail-separate-view"></view>
+  <view class="detail-intr-view">
+    <view class="detail-intr-view-tit-view">
+      <label class="detail-intr-view-tit-lab">详情介绍</label>
+    </view>
+    <label class="detail-intr-view-content-lab">{{itm.intr}}</label>
+  </view>
+</view>
+<div style="z-index:30">
+  <view class="detail-bottom-view"></view>
+</div>

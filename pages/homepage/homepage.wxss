@@ -1,0 +1,70 @@
+/* pages/homepage/homepage.wxss */
+.container {
+  align-items: stretch;
+  padding: 0 0;
+}
+
+page {
+  background-color: #F5F5F5;
+}
+
+swiper {
+  width: 100%;
+  height: 450rpx;
+}
+
+.swiper-item-img {
+  width: 100%;
+  height: 100%;
+}
+
+.element-container {
+  /* 基本样式设置 */
+  height: 480rpx;
+  background-color: #F5F5F5;
+
+  /* 容器设置 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+
+  /* 项目设置 */
+}
+
+.element-container-item {
+  width: 300rpx;
+  height: 400rpx;
+  border-radius: 20rpx;
+  background-color: #FFFFFF;
+
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.element-container-item-img {
+  width: 100%;
+  height: 60%;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.element-container-item-titlab {
+  padding-left: 10rpx;
+  font-size: 40rpx;
+  color: #808080;
+}
+
+.element-container-item-pricelab {
+  padding-left: 10rpx;
+  font-size: 35rpx;
+  color: #FFA500;
+}
+
+.element-container-item-saleslab {
+  padding-left: 10rpx;
+  font-size: 25rpx;
+  color: #C0C0C0;
+}

@@ -1,0 +1,27 @@
+<!--pages/homepage/homepage.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{bannerlist}}" wx:key="*this">
+          <swiper-item>
+            <image class="swiper-item-img" src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class="element-container" wx:for="{{itemlist}}" wx:key="*this">
+      <block wx:for="{{item}}" wx:key="*this">
+        <view class="element-container-item" bindtap="checkDetail" data-item="{{item}}">
+          <image class="element-container-item-img" src="{{item.img}}"></image>
+          <label class="element-container-item-titlab">{{item.tit}}</label>
+          <label class="element-container-item-pricelab">{{item.pri}}</label>
+          <label class="element-container-item-saleslab">{{item.sal}}</label>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+
