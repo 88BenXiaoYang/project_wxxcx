@@ -1,9 +1,10 @@
 <!--pages/homepage/homepage.wxml-->
 <view class="container">
-  <view class="page-body">
-    <view class="page-section page-section-spacing swiper">
+  <view class="banner-view-container">
+    <image class="banner-bg-img" src="../resource/bg_008.png"></image>
+    <view class="banner-view">
       <swiper indicator-dots="{{indicatorDots}}"
-        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}">
         <block wx:for="{{bannerlist}}" wx:key="*this">
           <swiper-item>
             <image class="swiper-item-img" src="{{item}}"></image>
@@ -11,13 +12,14 @@
         </block>
       </swiper>
     </view>
-
-    <import src="../template/hpeletemp.wxml"/>
-    <view class="element-container" wx:for="{{itemlist}}" wx:key="*this">
-      <block wx:for="{{item}}" wx:key="*this">
-        <template is="homepageitem" data="{{item}}"/>
-      </block>
-    </view>
   </view>
+
+  <import src="../template/hpeletemp.wxml"/>
+  <view class="element-container" wx:for="{{itemlist}}" wx:key="*this">
+    <block wx:for="{{item}}" wx:key="*this">
+      <template is="homepageitem" data="{{item}}"/>
+    </block>
+  </view>
+  
 </view>
 

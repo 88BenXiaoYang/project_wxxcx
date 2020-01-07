@@ -12,7 +12,16 @@
     </view>
     <label class="detail-intr-view-content-lab">{{itm.intr}}</label>
   </view>
+  <view class="detail-bottom-view">
+    <view class="detail-bottom-priceview">
+      <label class="detail-bottom-priceview-titlab">{{itm.pri}}</label>
+      <label class="detail-bottom-priceview-subtitlab">{{itm.sal}}</label>
+    </view>
+    <view class="detail-bottom-collectview" bindtap="collect">
+      <label class="detail-bottom-collectview-titlab">{{isCollected ? "已收藏" : "收藏"}}</label>
+    </view>
+    <view class="detail-bottom-connectionserviceview" bindtap="connectionservice">
+      <label class="detail-bottom-connectionserviceview-titlab">联系客服</label>
+    </view>
+  </view>
 </view>
-<div style="z-index:30">
-  <view class="detail-bottom-view"></view>
-</div>

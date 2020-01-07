@@ -6,6 +6,8 @@ Page({
    */
   data: {
     itm: {},
+    servicePhoneNum: "123456789",
+    isCollected: false
   },
 
   /**
@@ -65,5 +67,29 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  collect: function () {
+    if (this.data.isCollected) {
+      this.setData({
+        isCollected: false
+      });
+      wx.showToast({
+        title: '取消收藏'
+      });
+    } else {
+      this.setData({
+        isCollected: true
+      });
+      wx.showToast({
+        title: '收藏成功'
+      });
+    }
+  },
+
+  connectionservice: function () {
+    wx.makePhoneCall({
+      phoneNumber: this.data.servicePhoneNum,
+    })
   }
 })

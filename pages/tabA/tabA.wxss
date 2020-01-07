@@ -1,1 +1,37 @@
 /* pages/tabA/tabA.wxss */
+
+.item-container-view {
+  width: 100%;
+  height: 90rpx;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-container-view-lab {
+  margin-left: 20rpx;
+  width: 100% -60rpx;
+  font-size: 30rpx;
+  color: #A9A9A9;
+}
+
+.item-container-view-img {
+  width: 15rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}
+
+.bottom-line-view {
+  width: 100%;
+  height: 0.5rpx;
+}
+
+.bottom-line-img {
+  width: 100% - 40rpx;
+  height: 100%;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background-color: #D3D3D3;
+}

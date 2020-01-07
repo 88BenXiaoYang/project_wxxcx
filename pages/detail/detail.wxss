@@ -38,7 +38,7 @@
 
 .detail-intr-view {
   width: 100%;
-  height: 600rpx;
+  height: 450rpx;
 
   display: flex;
   flex-direction: column;
@@ -72,5 +72,68 @@
   height: 100rpx;
   position: fixed;
   bottom: 0;
-  background-color: #F4A460;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.detail-bottom-priceview {
+  width: 30%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  background-color: #F5F5F5;
+}
+
+.detail-bottom-priceview-titlab {
+  padding-left: 20rpx;
+  font-size: 35rpx;
+  font-weight: 30rpx;
+  color: #FFA500;
+}
+
+.detail-bottom-priceview-subtitlab {
+  padding-left: 20rpx;
+  font-size: 25rpx;
+  font-weight: 20rpx;
+  color: #C0C0C0;
+}
+
+.detail-bottom-collectview {
+  width: 30%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #D3D3D3;
+}
+
+.detail-bottom-collectview-titlab {
+  font-size: 30rpx;
+  font-weight: 20rpx;
+  color: #000000;
+}
+
+.detail-bottom-connectionserviceview {
+  width: 40%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #C0C0C0;
+}
+
+.detail-bottom-connectionserviceview-titlab {
+  font-size: 30rpx;
+  font-weight: 20rpx;
+  color: #000000;
 }

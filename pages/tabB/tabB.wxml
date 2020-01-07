@@ -1,3 +1,5 @@
-<scroll-view class="swiperHeight">
-  <view>Test</view>
-</scroll-view>
+<!-- <web-view src="{{webUrl}}"></web-view> -->
+<view class="tmp-view-container">
+  <view class="image-content-view"></view>
+  <image class="image-container" src="../resource/bg_008.png"></image>
+</view>

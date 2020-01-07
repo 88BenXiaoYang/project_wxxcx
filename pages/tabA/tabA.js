@@ -4,7 +4,64 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    itemlist: [
+      {
+        "tit":"商品列表",
+        "target":"jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      },
+      {
+        "tit": "商品列表",
+        "target": "jdlist"
+      }
+    ]
   },
 
   /**
@@ -83,7 +140,11 @@ Page({
   /**
    * 自定义函数
    */ 
-  goPageA: function() {
+  goPageA: function () {
     wx.navigateTo({url: '../pageA/pageA?flag=12&other=aaa'})
+  },
+
+  goNext: function (e) {
+
   }
 })

@@ -1,0 +1,10 @@
+<template name="cellitem">
+  <view class="item-container-view" bindtap="goNext" data-item="{{item}}">
+    <label class="item-container-view-lab">{{item.tit}}</label>
+    <image class="item-container-view-img" src="../resource/indicate_img.png"></image>
+  </view>
+
+  <view class="bottom-line-view">
+    <view class="bottom-line-img"></view>
+  </view>
+</template>
