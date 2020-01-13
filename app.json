@@ -5,12 +5,14 @@
     "pages/tabC/tabC",
     "pages/pageA/pageA",
     "pages/homepage/homepage",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/productlist/productlist",
+    "pages/map/map"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "ModelList",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

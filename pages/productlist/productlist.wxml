@@ -1,0 +1,5 @@
+<!--pages/productlist/productlist.wxml-->
+<view class="container">
+  <view class="pro-header-view"></view>
+  <view class="pro-list-view" style="height:{{prolistheight}}px"></view>
+</view>

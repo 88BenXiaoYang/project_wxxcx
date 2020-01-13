@@ -14,7 +14,7 @@
     </view>
   </view>
 
-  <import src="../template/hpeletemp.wxml"/>
+  <import src="../template_wxml/hpeletemp.wxml"/>
   <view class="element-container" wx:for="{{itemlist}}" wx:key="*this">
     <block wx:for="{{item}}" wx:key="*this">
       <template is="homepageitem" data="{{item}}"/>

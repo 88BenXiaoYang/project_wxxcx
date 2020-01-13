@@ -7,11 +7,11 @@ Page({
     itemlist: [
       {
         "tit":"商品列表",
-        "target":"jdlist"
+        "target":"productlist"
       },
       {
-        "tit": "商品列表",
-        "target": "jdlist"
+        "tit": "地图",
+        "target": "map"
       },
       {
         "tit": "商品列表",
@@ -145,6 +145,18 @@ Page({
   },
 
   goNext: function (e) {
+    var item = e.currentTarget.dataset.item;
+    var pageurl = '';
+    if (item.target == "productlist") {
+      pageurl = '../productlist/productlist';
+    } else if (item.target == "map") {
+      pageurl = '../map/map';
+    } else {
+      return;
+    }
 
+    wx.navigateTo({
+      url: pageurl,
+    })
   }
 })
