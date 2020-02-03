@@ -8,6 +8,89 @@ Page({
    */
   data: {
     prolistheight: 0,
+    classifyID: 0,
+    currentTab: 0,
+    scrollTop: 0,
+    classifyList: [
+      {
+        classifyID: 1,
+        className: '好吃的'
+      },
+      {
+        classifyID: 2,
+        className: '好玩的'
+      },
+      {
+        classifyID: 3,
+        className: '菜单3'
+      },
+      {
+        classifyID: 4,
+        className: '菜单4'
+      },
+      {
+        classifyID: 5,
+        className: '菜单5'
+      },
+      {
+        classifyID: 6,
+        className: '菜单6'
+      }
+    ],
+    contentData: {
+      contentList: [
+        {
+          className: '好吃的',
+          contentItems: [
+            {
+              classifyID: 1,
+              itemImg: '../resource/a01.png',
+              itemName: '苹果'
+            },
+            {
+              classifyID: 1,
+              itemImg: '../resource/b02.png',
+              itemName: '香蕉'
+            },
+            {
+              classifyID: 1,
+              itemImg: '../resource/a01.png',
+              itemName: '苹果'
+            },
+            {
+              classifyID: 1,
+              itemImg: '../resource/b02.png',
+              itemName: '香蕉'
+            }
+          ]
+        },
+        {
+          className: '好玩的',
+          contentItems: [
+            {
+              classifyID: 2,
+              itemImg: '../resource/f03.png',
+              itemName: '足球'
+            },
+            {
+              classifyID: 2,
+              itemImg: '../resource/b04.png',
+              itemName: '篮球'
+            },
+            {
+              classifyID: 2,
+              itemImg: '../resource/f03.png',
+              itemName: '足球'
+            },
+            {
+              classifyID: 2,
+              itemImg: '../resource/b04.png',
+              itemName: '篮球'
+            }
+          ]
+        }
+      ]
+    }
   },
 
   /**
@@ -18,7 +101,7 @@ Page({
     var whrpx = utils.getElementRPX(wh);
     console.log("px -> rpx : "+ whrpx);
     this.setData({
-      prolistheight: whrpx - 780,
+      prolistheight: whrpx - 750,
     });
   },
 
@@ -69,5 +152,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  tabTapped: function (e) {
+    this.setData({
+      currentTab: e.currentTarget.id,
+      classifyID: e.currentTarget.dataset.classifyid,
+      scrollTop: 0
+    })
   }
 })

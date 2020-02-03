@@ -1,6 +1,6 @@
 <view class="container">
   <import src="../template_wxml/cellitemtemp.wxml"/>
-  <block wx:for="{{itemlist}}" wx:key="">
+  <block wx:for="{{itemlist}}" wx:key="*this">
     <template is="cellitem" data="{{item}}"/>
   </block>
 </view>
