@@ -11,6 +11,7 @@ Page({
     classifyID: 0,
     currentTab: 0,
     scrollTop: 0,
+    toView: 0,
     classifyList: [
       {
         classifyID: 1,
@@ -22,7 +23,7 @@ Page({
       },
       {
         classifyID: 3,
-        className: '菜单3'
+        className: '好听的'
       },
       {
         classifyID: 4,
@@ -86,6 +87,31 @@ Page({
               classifyID: 2,
               itemImg: '../resource/b04.png',
               itemName: '篮球'
+            }
+          ]
+        },
+        {
+          className: '好听的',
+          contentItems: [
+            {
+              classifyID: 3,
+              itemImg: '../resource/music01.png',
+              itemName: '稻香'
+            },
+            {
+              classifyID: 3,
+              itemImg: '../resource/music01.png',
+              itemName: '青花瓷'
+            },
+            {
+              classifyID: 3,
+              itemImg: '../resource/music01.png',
+              itemName: '听妈妈的话'
+            },
+            {
+              classifyID: 3,
+              itemImg: '../resource/music01.png',
+              itemName: '晴天'
             }
           ]
         }
@@ -158,7 +184,7 @@ Page({
     this.setData({
       currentTab: e.currentTarget.id,
       classifyID: e.currentTarget.dataset.classifyid,
-      scrollTop: 0
+      toView: e.currentTarget.dataset.index
     })
   }
 })

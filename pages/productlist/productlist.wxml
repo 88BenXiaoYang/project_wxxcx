@@ -3,13 +3,13 @@
   <view class="pro-header-view"></view>
   <view class="pro-list-view" style="width:100%; height:{{prolistheight}}px">
     <scroll-view class="left-classify" scroll-y="true">
-      <view wx:for="{{classifyList}}" class="{{ currentTab == index ? 'active' : ''}}" wx:key="unique" bindtap="{{ currentTab != index ? 'tabTapped' : ''}}" id="{{index}}" data-classifyID="{{item.classifyID}}">{{item.className}}
+      <view wx:for="{{classifyList}}" class="{{ currentTab == index ? 'active' : ''}}" wx:key="unique" bindtap="{{ currentTab != index ? 'tabTapped' : ''}}" id="{{index}}" data-classifyID="{{item.classifyID}}" data-index="{{index}}">{{item.className}}
       </view>
     </scroll-view>
 
-    <scroll-view id="right-content" scroll-y="true" scroll-top="{{scrollTop}}">
+    <scroll-view id="right-content" scroll-y="true" scroll-into-view="anchor{{toView}}" scroll-with-animation="true">
       <view class="item-list" wx:for="{{contentData.contentList}}" wx:key="unique">
-        <view class="classify-title">{{item.className}}</view>
+        <view class="classify-title" id="anchor{{index}}">{{item.className}}</view>
         <view wx:for="{{item.contentItems}}" wx:key="unique" class="itemElement">
           <image class="img" src="{{item.itemImg}}" wx:if="{{item.itemImg}}"></image>
           <text>{{item.itemName}}</text>
