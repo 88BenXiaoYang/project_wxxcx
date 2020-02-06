@@ -7,7 +7,8 @@
     "pages/homepage/homepage",
     "pages/detail/detail",
     "pages/productlist/productlist",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/channels/channels"
   ],
   "window": {
     "backgroundTextStyle": "light",

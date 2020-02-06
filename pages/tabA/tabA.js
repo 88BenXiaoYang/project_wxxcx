@@ -10,12 +10,12 @@ Page({
         "target":"productlist"
       },
       {
-        "tit": "地图",
-        "target": "map"
+        "tit": "频道选择",
+        "target": "channels"
       },
       {
-        "tit": "商品列表",
-        "target": "jdlist"
+        "tit": "地图",
+        "target": "map"
       },
       {
         "tit": "商品列表",
@@ -151,6 +151,8 @@ Page({
       pageurl = '../productlist/productlist';
     } else if (item.target == "map") {
       pageurl = '../map/map';
+    } else if (item.target == "channels") {
+      pageurl = '../channels/channels';
     } else {
       return;
     }
